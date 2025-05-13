@@ -21,7 +21,7 @@
         </ul>
       </nav>
       <div class="carrito-icono">
-        <img src="img/cart.svg" alt="Carrito">
+        <img src="img/carrito.jpg" alt="Carrito">
         <span id="carrito-contador">0</span>
       </div>
     </div>
@@ -59,9 +59,11 @@
         </select>
         <select>
           <option value="">Marca</option>
-          <option value="adidas">Adidas</option>
           <option value="nike">Nike</option>
+          <option value="adidas">Adidas</option>
+          <option value="jordan">Jordan</option>
           <option value="puma">Puma</option>
+          <option value="underarmour">Under Armour</option>
           <option value="asics">Asics</option>
         </select>
         <button type="submit" class="btn-filtrar">Filtrar</button>
@@ -79,7 +81,7 @@
           <span class="deporte">Running</span>
           <p class="precio">89,99 €</p>
           <p class="descripcion">Tecnología de amortiguación avanzada, suela antideslizante y diseño transpirable. Tallas 36-45.</p>
-          <button class="btn-primario">Añadir al carrito</button>
+          <button class="btn-primario" onclick="agregarAlCarrito('Zapatillas Running Pro', 89.99)">Añadir al carrito</button>
         </div>
       </article>
       <article class="producto-card">
@@ -91,7 +93,7 @@
           <span class="deporte">Fitness</span>
           <p class="precio">24,99 €</p>
           <p class="descripcion">Camiseta técnica con tecnología Dri-FIT, ideal para tus entrenamientos más exigentes.</p>
-          <button class="btn-primario">Añadir al carrito</button>
+          <button class="btn-primario" onclick="agregarAlCarrito('Camiseta Nike Training', 24.99)">Añadir al carrito</button>
         </div>
       </article>
       <article class="producto-card">
@@ -103,7 +105,7 @@
           <span class="deporte">Fútbol</span>
           <p class="precio">29,99 €</p>
           <p class="descripcion">Balón oficial de competición, costuras reforzadas y superficie texturizada para un mejor control.</p>
-          <button class="btn-primario">Añadir al carrito</button>
+          <button class="btn-primario" onclick="agregarAlCarrito('Balón Fútbol Adidas', 29.99)">Añadir al carrito</button>
         </div>
       </article>
       <!-- Más productos... -->
@@ -139,5 +141,6 @@
   </footer>
   
   <script src="js/tienda.js"></script>
+  <script src="js/filtro.js"></script>
 </body>
 </html>
