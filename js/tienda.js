@@ -83,6 +83,3 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target === this) this.classList.remove('activo');
   });
 });
-
-// Para los botones "Añadir al carrito" en productos.html pon:
-//  
