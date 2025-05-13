@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Reserva tu actividad | DeporteTotal</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="header-principal">
+    <div class="container">
+      <a href="index.html" class="logo">Deporte<span>Total</span></a>
+      <nav>
+        <ul>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="marcas.html">Marcas</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="reserva.html">Reservas</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="carrito-icono">
+        <img src="img/cart.svg" alt="Carrito">
+        <span id="carrito-contador">0</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="reserva-hero">
+      <h1>Reserva tu experiencia deportiva</h1>
+      <p>¿Quieres probar el último material, reservar una clase personalizada o vivir una actividad diferente? Elige tu experiencia y déjanos el resto a nosotros.</p>
+    </section>
+    <section class="reserva-formulario">
+      <form id="reserva-form">
+        <div class="form-row">
+          <input type="text" id="nombre" placeholder="Nombre completo" required>
+          <input type="email" id="email" placeholder="Correo electrónico" required>
+        </div>
+        <div class="form-row">
+          <input type="tel" id="telefono" placeholder="Teléfono" required>
+          <input type="date" id="fecha" required>
+          <input type="time" id="hora" required>
+        </div>
+        <div class="form-row">
+          <select id="actividad" required>
+            <option value="">Selecciona una actividad</option>
+            <option value="clase-futbol">Clase de Fútbol</option>
+            <option value="clase-tenis">Clase de Tenis</option>
+            <option value="prueba-zapatillas">Prueba de Zapatillas</option>
+            <option value="entrenamiento-personal">Entrenamiento Personal</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <textarea id="comentarios" placeholder="¿Algún detalle o preferencia?"></textarea>
+        </div>
+        <button type="submit" class="btn-cta">Reservar ahora</button>
+      </form>
+      <div class="reserva-info">
+        <h3>¿Por qué reservar con nosotros?</h3>
+        <ul>
+          <li>Asesoría personalizada y gratuita</li>
+          <li>Material de última generación</li>
+          <li>Entrenadores certificados</li>
+          <li>Flexibilidad de horarios</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h4>Sobre DeporteTotal</h4>
+        <p>Tu tienda online de confianza para ropa, calzado y accesorios deportivos. Envíos rápidos, atención personalizada y las mejores marcas del mercado.</p>
+      </div>
+      <div>
+        <h4>Atención al cliente</h4>
+        <ul>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="faq.html">Preguntas frecuentes</a></li>
+          <li><a href="devoluciones.html">Devoluciones</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <div class="redes">
+          <a href="#"><img src="img/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="img/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="img/twitter.svg" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">
+      &copy; 2025 DeporteTotal. Todos los derechos reservados.
+    </div>
+  </footer>
+  <script src="tienda.js"></script>
+</body>
+</html>

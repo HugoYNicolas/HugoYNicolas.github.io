@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Catálogo de Productos | DeporteTotal</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="header-principal">
+    <div class="container">
+      <a href="index.html" class="logo">Deporte<span>Total</span></a>
+      <nav>
+        <ul>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="marcas.html">Marcas</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="reserva.html">Reservas</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="carrito-icono">
+        <img src="img/cart.svg" alt="Carrito">
+        <span id="carrito-contador">0</span>
+      </div>
+    </div>
+    <div id="carrito-modal" class="carrito-modal">
+      <div class="carrito-contenido">
+        <span class="cerrar-carrito">&times;</span>
+        <h2>Tu carrito</h2>
+        <div id="carrito-lista"></div>
+        <div class="carrito-total">
+          <strong>Total:</strong> <span id="carrito-total"></span>
+        </div>
+        <button id="vaciar-carrito" class="btn-primario">Vaciar carrito</button>
+        <button class="btn-cta" style="margin-top:1rem;">Finalizar compra</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="filtros">
+      <form>
+        <input type="text" placeholder="Buscar producto, marca o deporte...">
+        <select>
+          <option value="">Categoría</option>
+          <option value="calzado">Calzado</option>
+          <option value="ropa">Ropa</option>
+          <option value="accesorios">Accesorios</option>
+          <option value="equipos">Equipos</option>
+        </select>
+        <select>
+          <option value="">Deporte</option>
+          <option value="futbol">Fútbol</option>
+          <option value="running">Running</option>
+          <option value="tenis">Tenis</option>
+          <option value="fitness">Fitness</option>
+        </select>
+        <select>
+          <option value="">Marca</option>
+          <option value="adidas">Adidas</option>
+          <option value="nike">Nike</option>
+          <option value="puma">Puma</option>
+          <option value="asics">Asics</option>
+        </select>
+        <button type="submit" class="btn-filtrar">Filtrar</button>
+      </form>
+    </section>
+
+    <section class="productos-grid">
+      <!-- Ejemplo de producto -->
+      <article class="producto-card">
+        <img src="img/zapatillas-running.jpg" alt="Zapatillas Running Pro">
+        <div class="producto-info">
+          <h3>Zapatillas Running Pro</h3>
+          <span class="marca">Nike</span>
+          <span class="categoria">Calzado</span>
+          <span class="deporte">Running</span>
+          <p class="precio">89,99 €</p>
+          <p class="descripcion">Tecnología de amortiguación avanzada, suela antideslizante y diseño transpirable. Tallas 36-45.</p>
+          <button class="btn-primario">Añadir al carrito</button>
+        </div>
+      </article>
+      <article class="producto-card">
+        <img src="img/camiseta-nike.jpg" alt="Camiseta Nike Training">
+        <div class="producto-info">
+          <h3>Camiseta Nike Training</h3>
+          <span class="marca">Nike</span>
+          <span class="categoria">Ropa</span>
+          <span class="deporte">Fitness</span>
+          <p class="precio">24,99 €</p>
+          <p class="descripcion">Camiseta técnica con tecnología Dri-FIT, ideal para tus entrenamientos más exigentes.</p>
+          <button class="btn-primario">Añadir al carrito</button>
+        </div>
+      </article>
+      <article class="producto-card">
+        <img src="img/balon-adidas.jpg" alt="Balón Fútbol Adidas">
+        <div class="producto-info">
+          <h3>Balón Fútbol Adidas</h3>
+          <span class="marca">Adidas</span>
+          <span class="categoria">Accesorios</span>
+          <span class="deporte">Fútbol</span>
+          <p class="precio">29,99 €</p>
+          <p class="descripcion">Balón oficial de competición, costuras reforzadas y superficie texturizada para un mejor control.</p>
+          <button class="btn-primario">Añadir al carrito</button>
+        </div>
+      </article>
+      <!-- Más productos... -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h4>Sobre DeporteTotal</h4>
+        <p>Tu tienda online de confianza para ropa, calzado y accesorios deportivos. Envíos rápidos, atención personalizada y las mejores marcas del mercado.</p>
+      </div>
+      <div>
+        <h4>Atención al cliente</h4>
+        <ul>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="faq.html">Preguntas frecuentes</a></li>
+          <li><a href="devoluciones.html">Devoluciones</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <div class="redes">
+          <a href="#"><img src="img/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="img/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="img/twitter.svg" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">
+      &copy; 2025 DeporteTotal. Todos los derechos reservados.
+    </div>
+  </footer>
+  
+  <script src="js/tienda.js"></script>
+</body>
+</html>
