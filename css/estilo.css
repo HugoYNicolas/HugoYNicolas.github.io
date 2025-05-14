@@ -264,10 +264,9 @@ h3 {
 /* --- Ventajas --- */
 .ventajas {
   display: flex;
-  
   justify-content: space-between;
   gap: 2rem;
-  margin: 3rem 0;
+  margin: 3rem auto;
   background: var(--color-blanco);
   border-radius: var(--radio);
   box-shadow: var(--sombra);
