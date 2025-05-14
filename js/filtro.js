@@ -2,31 +2,76 @@ document.addEventListener('DOMContentLoaded', function() {
     // Lista de productos (puedes ampliarla)
     const productos = [
       {
-        nombre: 'Zapatillas Running Pro', 
-        img: "img/zapas.jpg", 
+        nombre: 'Nike Mercurial Speed 009', 
+        img: "img/botasnike.jpg", 
+        marca: 'nike',
         categoria: 'calzado', 
-        deporte: 'running', 
-        marca: 'nike', 
-        precio: 89.99, 
-        descripcion: "Tecnología de amortiguación avanzada, suela antideslizante y diseño transpirable. Tallas 36-45."
+        deporte: 'futbol',
+        precio: 289.99, 
+        descripcion: "Las Nike Mercurial Dream Speed 009 ofrecen velocidad, amortiguación Air Zoom y tracción dinámica para superar a la defensa con facilidad."
       },
       {
-        nombre: 'Camiseta Nike Training', 
-        img: "img/camiseta-nike.jpg",  // Añade ruta de imagen
+        nombre: 'Chaqueta Nike Dri-Fit Form', 
+        img: "img/chaquetanike.jpg",
+        marca: 'nike',
         categoria: 'ropa', 
-        deporte: 'fitness', 
-        marca: 'nike', 
-        precio: 24.99,
-        descripcion: "Descripción del producto"
+        deporte: 'running',
+        precio: 12.99,
+        descripcion: "Camiseta técnica con tecnología Dri-FIT, ideal para tus entrenamientos más exigentes."
       },
       {
-        nombre: 'Balón Fútbol Adidas', 
-        img: "img/balon-adidas.jpg",  // Añade ruta de imagen
+        nombre: 'Nike Dri-FIT ADV Ace', 
+        img: "img/viseranike.png",
+        marca: 'nike',
         categoria: 'accesorios', 
-        deporte: 'futbol', 
-        marca: 'adidas', 
+        deporte: 'tenis',
         precio: 29.99,
-        descripcion: "Descripción del producto"
+        descripcion: "Visera ligera y transpirable, perfecta para el tenis, con tejido que capilariza el sudor y diseño AeroBill acortado para máxima concentración en el juego."
+      },
+      {
+        nombre: 'Camiseta Nike Los Angeles Lakers Icon Edition Lebron James', 
+        img: "img/lakersnike.jpg",
+        marca: 'nike',
+        categoria: 'equipos', 
+        deporte: 'baloncesto',
+        precio: 104.99,
+        descripcion: "La camiseta Los Angeles Lakers Icon Edition LeBron James combina tradición y estilo profesional con tejido transpirable, ideal para apoyar a tu equipo y jugar con comodidad."
+      },
+      {
+        nombre: 'Balón adidas Real Madrid 2024-2025', 
+        img: "img/balonadidas.jpg",
+        marca: 'adidas',
+        categoria: 'accesorios', 
+        deporte: 'baloncesto',
+        precio: 39.99,
+        descripcion: "Mejora tu juego mientras representas al Real Madrid con este balón adidas 2024-2025, fabricado en caucho resistente y con un diseño que luce las 3 bandas y el escudo del equipo."
+      },
+      {
+        nombre: 'Tenis Adidas Clásicas Swift Run', 
+        img: "img/tenisadidas.jpg",
+        marca: 'adidas',
+        categoria: 'calzado', 
+        deporte: 'tenis',
+        precio: 99.99,
+        descripcion: "Diseñadas para dominar la pista, estas zapatillas de tenis adidas ofrecen sujeción, tracción y comodidad para rendir al máximo en cada punto."
+      },
+      {
+        nombre: 'Camiseta adidas FC Bayern Primera Equipación Authentic 2024-2025', 
+        img: "img/bayernadidas.jpg",
+        marca: 'adidas',
+        categoria: 'equipos', 
+        deporte: 'futbol',
+        precio: 119.99,
+        descripcion: "La camiseta FC Bayern Authentic 2024-2025 combina tradición y rendimiento con un diseño en tonos rojos, detalles termotransferidos y tecnología HEAT.RDY para mantener la frescura en el campo."
+      },
+      {
+      nombre: 'Pantalón largo adidas Essentials 3 Stripes', 
+        img: "img/runningadidas.jpg",
+        marca: 'adidas',
+        categoria: 'ropa', 
+        deporte: 'running',
+        precio: 29.99,
+        descripcion: "Este pantalón adidas tiene todo lo que necesitas para presumir de estilo deportivo en tu día a día. Combínalo con cualquier cosa, desde una camiseta estampada hasta una camisa holgada."
       },
       // Añade más productos aquí...
     ];
@@ -104,9 +149,3 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mostrar todos los productos al cargar inicialmente
     mostrarProductos(productos);
   });
-  
-  // Función global para el carrito (si está en otro archivo)
-  function agregarAlCarrito(nombre, precio) {
-    // Tu lógica del carrito aquí
-  }
-  
