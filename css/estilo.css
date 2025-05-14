@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;700&display=swap');
 
 :root {
-  --color-principal: #1abc9c;
+  --color-principal: #4cccf3;
   --color-secundario: #222;
   --color-fondo: #f7f7f7;
   --color-blanco: #fff;
   --color-gris: #ececec;
   --color-texto: #222;
-  --color-acento: #ff5a36;
+  --color-acento: #c300ff;
   --sombra: 0 4px 16px rgba(0,0,0,0.06);
   --radio: 12px;
 }
