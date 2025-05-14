@@ -755,3 +755,251 @@ footer {
   margin-left: 1.5rem;
   margin-bottom: 1rem;
 }
+.cart-product-image img {
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+
+.cart-product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cart-totals {
+  margin-top: 2rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.cart-total-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.cart-total-line.total {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.cart-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.btn-cta {
+  background: var(--color-acento);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--radio);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-cta:hover {
+  background: #a000d1;
+}
+/* Estilos para el carrito mejorado */
+.carrito-modal {
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(3px);
+}
+
+.carrito-contenido {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.carrito-contenido h2 {
+  color: #1abc9c;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.carrito-producto {
+  display: grid;
+  grid-template-columns: 60px 2fr 1fr 1fr 30px;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.producto-img img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.producto-detalles h4 {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.precio-unitario {
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.control-cantidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-cantidad {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background: #f0f0f0;
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-cantidad:hover {
+  background: #1abc9c;
+  color: white;
+}
+
+.cantidad {
+  font-weight: 600;
+  display: inline-block;
+  min-width: 20px;
+  text-align: center;
+}
+
+.precio-total {
+  font-weight: 700;
+  color: #1abc9c;
+}
+
+.btn-eliminar {
+  background: none;
+  border: none;
+  color: #ff5a5a;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.btn-eliminar:hover {
+  color: #ff0000;
+}
+
+.cart-totals {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 2px dashed #eee;
+}
+
+.cart-total-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.cart-total-line.total {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #1abc9c;
+  border-top: 1px solid #eee;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+}
+
+.cart-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#vaciar-carrito {
+  background: #f0f0f0;
+  color: #666;
+  border: none;
+  padding: 0.75rem 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+#vaciar-carrito:hover {
+  background: #e0e0e0;
+}
+
+#tramitar-pedido {
+  background: #1abc9c;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(26,188,156,0.3);
+}
+
+#tramitar-pedido:hover {
+  background: #16a085;
+  transform: translateY(-2px);
+}
+
+.carrito-vacio {
+  text-align: center;
+  padding: 2rem 0;
+  color: #888;
+  font-style: italic;
+}
+
+.cerrar-carrito {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.cerrar-carrito:hover {
+  color: #1abc9c;
+}
+.carrito-producto {
+  display: grid;
+  grid-template-columns: 60px 2fr 1fr 1fr 30px;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.producto-img img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
