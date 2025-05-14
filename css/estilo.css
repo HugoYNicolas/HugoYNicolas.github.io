@@ -2,7 +2,7 @@
 
 :root {
   --color-principal: #4cccf3;
-  --color-secundario: #222;
+  --color-secundario: #3b3b3b;
   --color-fondo: #f7f7f7;
   --color-blanco: #fff;
   --color-gris: #ececec;
@@ -143,7 +143,7 @@ nav ul li a.active {
 }
 
 .btn-cta:hover {
-  background: #d84315;
+  background: #0099ff;
 }
 
 .hero-img img {
@@ -247,7 +247,7 @@ h3 {
 }
 
 .btn-primario:hover {
-  background: #159c89;
+  background: var(--color-acento);
 }
 
 .btn-secundario {
@@ -755,4 +755,3 @@ footer {
   margin-left: 1.5rem;
   margin-bottom: 1rem;
 }
-
