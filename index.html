@@ -9,7 +9,7 @@
 <body>
   <header class="header-principal">
     <div class="container">
-      <a href="index.html" class="logo">Deporte<span>Total</span></a>
+      <a href="index.html" class="logo">Digi<span>Deporte</span></a>
       <nav>
         <ul>
           <li><a href="productos.html">Productos</a></li>
@@ -21,8 +21,20 @@
         </ul>
       </nav>
       <div class="carrito-icono">
-        <img src="img/cart.svg" alt="Carrito">
+        <img src="img/carrito.jpg" alt="Carrito">
         <span id="carrito-contador">0</span>
+      </div>
+    </div>
+    <div id="carrito-modal" class="carrito-modal">
+      <div class="carrito-contenido">
+        <span class="cerrar-carrito">&times;</span>
+        <h2>Tu carrito</h2>
+        <div id="carrito-lista"></div>
+        <div class="carrito-total">
+          <strong>Total:</strong> <span id="carrito-total"></span>
+        </div>
+        <button id="vaciar-carrito" class="btn-primario">Vaciar carrito</button>
+        <button class="btn-cta" style="margin-top:1rem;">Finalizar compra</button>
       </div>
     </div>
   </header>
@@ -34,55 +46,74 @@
       <a href="productos.html" class="btn-cta">Explorar catálogo</a>
     </div>
     <div class="hero-img">
-      <img src="img/hero-deporte.jpg" alt="Deporte en acción">
+      <img src="img/index.png" alt="Deporte en acción">
     </div>
   </section>
 
   <section class="destacados">
     <h2>Productos destacados</h2>
     <div class="productos-grid">
-      <article class="producto">
-        <img src="img/zapatillas-running.jpg" alt="Zapatillas Running Pro">
-        <h3>Zapatillas Running Pro</h3>
-        <p class="precio">89,99 €</p>
-        <p class="descripcion">Ligereza, amortiguación y diseño para que superes tus límites. Disponibles en varias tallas y colores.</p>
-        <a href="productos.html" class="btn-secundario">Ver más</a>
+
+      <article class="producto-card">
+        <img src="img/botasnike.jpg" alt="Nike Mercurial Speed 009">
+        <div class="producto-info">
+          <h3>Nike Mercurial Speed 009</h3>
+          <span class="marca">Nike</span>
+          <span class="categoria">Calzado</span>
+          <span class="deporte">Fútbol</span>
+          <p class="precio">289,99 €</p>
+          <p class="descripcion">Las Nike Mercurial Dream Speed 009 ofrecen velocidad, amortiguación Air Zoom y tracción dinámica para superar a la defensa con facilidad.</p>
+          <button class="btn-primario" onclick="agregarAlCarrito('Nike Mercurial Speed 009', 289.99)">Añadir al carrito</button>
+        </div>
       </article>
-      <article class="producto">
-        <img src="img/balon-adidas.jpg" alt="Balón Fútbol Adidas">
-        <h3>Balón Fútbol Adidas</h3>
-        <p class="precio">29,99 €</p>
-        <p class="descripcion">Balón oficial de competición, resistente y con un agarre superior para cada partido.</p>
-        <a href="productos.html" class="btn-secundario">Ver más</a>
+
+      <article class="producto-card">
+        <img src="img/lakersnike.jpg" alt="Camiseta Nike Los Angeles Lakers Icon Edition Lebron James">
+        <div class="producto-info">
+          <h3>Camiseta Nike Los Angeles Lakers Icon Edition Lebron James</h3>
+          <span class="marca">Nike</span>
+          <span class="categoria">Equipos</span>
+          <span class="deporte">Baloncesto</span>
+          <p class="precio">104,99 €</p>
+          <p class="descripcion">La camiseta Los Angeles Lakers Icon Edition LeBron James combina tradición y estilo profesional con tejido transpirable, ideal para apoyar a tu equipo y jugar con comodidad.</p>
+          <button class="btn-primario" onclick="agregarAlCarrito('Camiseta Nike Los Angeles Lakers Icon Edition Lebron James', 104.99)">Añadir al carrito</button>
+        </div>
       </article>
-      <article class="producto">
-        <img src="img/camiseta-nike.jpg" alt="Camiseta Nike Training">
-        <h3>Camiseta Nike Training</h3>
-        <p class="precio">24,99 €</p>
-        <p class="descripcion">Tecnología Dri-FIT para mantenerte seco y cómodo en tus entrenamientos más intensos.</p>
-        <a href="productos.html" class="btn-secundario">Ver más</a>
+
+      <article class="producto-card">
+        <img src="img/balonadidas.jpg" alt="Balón adidas Real Madrid 2024-2025">
+        <div class="producto-info">
+          <h3>Balón adidas Real Madrid 2024-2025</h3>
+          <span class="marca">Adidas</span>
+          <span class="categoria">Accesorios</span>
+          <span class="deporte">Baloncesto</span>
+          <p class="precio">39,99 €</p>
+          <p class="descripcion">Mejora tu juego mientras representas al Real Madrid con este balón adidas 2024-2025, fabricado en caucho resistente y con un diseño que luce las 3 bandas y el escudo del equipo.</p>
+          <button class="btn-primario" onclick="agregarAlCarrito('Balón adidas Real Madrid 2024-2025', 39.99)">Añadir al carrito</button>
+        </div>
       </article>
+
     </div>
   </section>
 
   <section class="ventajas">
     <div class="ventaja">
-      <img src="img/envio-rapido.svg" alt="Envío rápido">
+      <img src="img/camion.png" alt="Envío rápido">
       <h4>Envío rápido</h4>
       <p>Recibe tu pedido en 24/48h en toda la península.</p>
     </div>
     <div class="ventaja">
-      <img src="img/soporte.svg" alt="Soporte experto">
+      <img src="img/soporte.png" alt="Soporte experto">
       <h4>Soporte experto</h4>
       <p>Asesoría personalizada para elegir el producto perfecto.</p>
     </div>
     <div class="ventaja">
-      <img src="img/devolucion.svg" alt="Devolución fácil">
+      <img src="img/devolucion.png" alt="Devolución fácil">
       <h4>Devolución fácil</h4>
       <p>30 días para cambios y devoluciones sin complicaciones.</p>
     </div>
     <div class="ventaja">
-      <img src="img/seguridad.svg" alt="Pago seguro">
+      <img src="img/pago.png" alt="Pago seguro">
       <h4>Pago seguro</h4>
       <p>Transacciones protegidas y múltiples métodos de pago.</p>
     </div>
@@ -91,11 +122,12 @@
   <section class="marcas-destacadas">
     <h2>Nuestras marcas</h2>
     <div class="marcas-slider">
-      <img src="img/logo-nike.png" alt="Nike">
-      <img src="img/logo-adidas.png" alt="Adidas">
-      <img src="img/logo-puma.png" alt="Puma">
-      <img src="img/logo-underarmour.png" alt="Under Armour">
-      <img src="img/logo-asics.png" alt="Asics">
+      <a href="productos.html?marca=nike"><img src="img/nike.jpg" alt="Nike"></a>
+      <a href="productos.html?marca=adidas"><img src="img/adidas.png" alt="Adidas"></a>
+      <a href="productos.html?marca=jordan"><img src="img/jordan.png" alt="Jordan"></a>
+      <a href="productos.html?marca=puma"><img src="img/puma.jpg" alt="Puma"></a>
+      <a href="productos.html?marca=underarmour"><img src="img/underarmour.png" alt="Under Armour"></a>
+      <a href="productos.html?marca=asics"><img src="img/asics.png" alt="Asics"></a>
     </div>
   </section>
 
@@ -116,9 +148,12 @@
       <div>
         <h4>Síguenos</h4>
         <div class="redes">
-          <a href="#"><img src="img/facebook.svg" alt="Facebook"></a>
-          <a href="#"><img src="img/instagram.svg" alt="Instagram"></a>
-          <a href="#"><img src="img/twitter.svg" alt="Twitter"></a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="img/facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="img/instagram.png" alt="Instagram"></a>
+          <a href="https://github.com/HugoYNicolas" target="_blank">
+            <img src="img/github.webp" alt="Github"></a>
         </div>
       </div>
     </div>
@@ -126,5 +161,7 @@
       &copy; 2025 DeporteTotal. Todos los derechos reservados.
     </div>
   </footer>
+  <script src="js/tienda.js"></script>
+  <script src="js/filtroDestacados.js"></script>
 </body>
 </html>
