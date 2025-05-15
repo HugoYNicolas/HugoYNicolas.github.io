@@ -28,6 +28,33 @@ document.addEventListener('DOMContentLoaded', function() {
       precio: 59.99,
       descripcion: "La camiseta tercera equipación PSG 2023/24 fusiona el estilo urbano con el fútbol de élite, con el icónico Jordan Elephant Print y tecnología Nike Match para máximo rendimiento y frescura."
     },
+    {
+      nombre: 'Balón Jordan Basketball 8P Energy Hyper Pink-Black-Black-White', 
+        img: "img/balonjordan.jpg",
+        marca: 'Jordan',
+        categoria: 'Accesorios', 
+        deporte: 'Baloncesto',
+        precio: 69.99,
+        descripcion: "El balón Jordan Basketball 8P Energy destaca por su diseño en Hyper Pink y detalles en negro y blanco, ofreciendo agarre, durabilidad y estilo para dominar la cancha con energía y precisión."
+    },
+    {
+      nombre: 'Zapatilla Jordan Air Jordan 1 Retro High OG UNC Reimagined Preescolar', 
+        img: "img/calzadojordan.jpg",
+        marca: 'Jordan',
+        categoria: 'Calzado', 
+        deporte: 'Baloncesto',
+        precio: 89.99,
+        descripcion: "Las Air Jordan 1 rinden homenaje a los inicios de MJ en la University of North Carolina, con colores clásicos que celebran el origen de su leyenda."
+    },
+    {
+      nombre: 'Botas adidas F50 Elite FG Two Horizons', 
+        img: "img/botasadidas.jpg",
+        marca: 'Adidas',
+        categoria: 'Calzado', 
+        deporte: 'Fútbol',
+        precio: 259.99,
+        descripcion: "Las botas adidas F50 Elite edición limitada rinde homenaje a Mohamed Salah con diseño en rojo, empeine Fibertouch y suela Sprintframe 360 para velocidad y sujeción explosiva."
+    },
   ];
 
   // Función para mostrar productos en el DOM
@@ -51,8 +78,8 @@ document.addEventListener('DOMContentLoaded', function() {
           <span class="categoria">${prod.categoria}</span>
           <span class="deporte">${prod.deporte}</span>
           <p class="precio">${prod.precio.toFixed(2)} €</p>
-          ${prod.descripcion ? `<p class="descripcion">${prod.descripcion}</p>` : ''}
-          <button class="btn-primario" onclick="agregarAlCarrito('${prod.nombre}', ${prod.precio})">Añadir al carrito</button>
+          <p class="descripcion">${prod.descripcion || ''}</p>
+          <button class="btn-primario" onclick="agregarAlCarrito('${prod.nombre}', ${prod.precio}, '${prod.img}')">Añadir al carrito</button>
         </div>
       `;
       contenedor.appendChild(div);
