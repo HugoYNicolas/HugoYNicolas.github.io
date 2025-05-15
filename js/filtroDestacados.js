@@ -62,9 +62,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // Función para filtrar productos
   function filtrarProductos() {
     const inputBusqueda = document.querySelector('.filtros input[type="text"]').value.toLowerCase();
-    const categoria = document.querySelector('.filtros select:nth-of-type(1)').value.toLowerCase();
-    const deporte = document.querySelector('.filtros select:nth-of-type(2)').value.toLowerCase();
-    const marca = document.querySelector('.filtros select:nth-of-type(3)').value.toLowerCase();
+    const marca = document.querySelector('.filtros select:nth-of-type(1)').value.toLowerCase();
+    const categoria = document.querySelector('.filtros select:nth-of-type(2)').value.toLowerCase();
+    const deporte = document.querySelector('.filtros select:nth-of-type(3)').value.toLowerCase();
 
     const productosFiltrados = productos.filter(prod => {
       const coincideBusqueda = prod.nombre.toLowerCase().includes(inputBusqueda) || 
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const marcaFiltro = urlParams.get('marca');
 
   if (marcaFiltro) {
-    const selectMarca = document.querySelector('.filtros select:nth-of-type(3)');
+    const selectMarca = document.querySelector('.filtros select:nth-of-type(1)');
     if (selectMarca) {
       selectMarca.value = marcaFiltro.toLowerCase();
       // Filtramos después de que el DOM esté listo
@@ -100,6 +100,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Mostrar todos los productos al cargar inicialmente
   mostrarProductos(productos);
 });
