@@ -878,7 +878,7 @@ footer {
 }
 
 .btn-cantidad:hover {
-  background: var(--color-acento);
+  background: var(--color-principal);
   color: white;
 }
 
