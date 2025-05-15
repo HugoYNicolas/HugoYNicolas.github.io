@@ -9,18 +9,53 @@
 <body>
   <header class="header-principal">
     <div class="container">
-      <a href="index.html" class="logo">Deporte<span>Total</span></a>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">👟⚽</span>
+                <span class="logo-text">
+                  <span class="logo-digi">Digi</span><span class="logo-deporte">Deporte</span>
+                </span>
+            </a>
       <nav>
         <ul>
           <li><a href="productos.html">Productos</a></li>
           <li><a href="marcas.html">Marcas</a></li>
           <li><a href="ofertas.html">Ofertas</a></li>
           <li><a href="reserva.html">Reservas</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="tiendas.html">Tiendas</a></li>
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
-    </div>
+      <div class="carrito-icono">
+            <img src="img/carrito.jpg" alt="Carrito">
+            <span id="carrito-contador">0</span>
+          </div>
+        </div>
+        <!-- Modal Carrito -->
+        <div id="carrito-modal" class="carrito-modal">
+          <div class="carrito-contenido">
+            <span class="cerrar-carrito">&times;</span>
+            <h2>Tu carrito</h2>
+            <div id="carrito-lista"></div>
+            <div class="cart-totals">
+              <div class="cart-total-line">
+                <span>Subtotal:</span>
+                <span id="carrito-subtotal">0,00 €</span>
+              </div>
+              <div class="cart-total-line">
+                <span>IVA (21%):</span>
+                <span id="carrito-iva">0,00 €</span>
+              </div>
+              <div class="cart-total-line total">
+                <span>Total:</span>
+                <span id="carrito-total">0,00 €</span>
+              </div>
+            </div>
+            <div class="cart-actions">
+              <button id="vaciar-carrito">Vaciar carrito</button>
+              <button id="tramitar-pedido">Tramitar pedido</button>
+            </div>
+          </div>
+        </div>
   </header>
 
   <main>
