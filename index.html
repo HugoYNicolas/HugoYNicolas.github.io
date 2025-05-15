@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>DigiDeporte | Tu tienda deportiva online</title>
+  <title>DigiDeporte| Tu tienda deportiva online</title>
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
@@ -30,11 +30,24 @@
         <span class="cerrar-carrito">&times;</span>
         <h2>Tu carrito</h2>
         <div id="carrito-lista"></div>
-        <div class="carrito-total">
-          <strong>Total:</strong> <span id="carrito-total"></span>
+        <div class="cart-totals">
+          <div class="cart-total-line">
+            <span>Subtotal:</span>
+            <span id="carrito-subtotal">0,00 €</span>
+          </div>
+          <div class="cart-total-line">
+            <span>IVA (21%):</span>
+            <span id="carrito-iva">0,00 €</span>
+          </div>
+          <div class="cart-total-line total">
+            <span>Total:</span>
+            <span id="carrito-total">0,00 €</span>
+          </div>
         </div>
-        <button id="vaciar-carrito" class="btn-primario">Vaciar carrito</button>
-        <button class="btn-cta" style="margin-top:1rem;">Finalizar compra</button>
+        <div class="cart-actions">
+          <button id="vaciar-carrito">Vaciar carrito</button>
+          <button id="tramitar-pedido">Tramitar pedido</button>
+        </div>
       </div>
     </div>
   </header>
