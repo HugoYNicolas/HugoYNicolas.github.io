@@ -119,3 +119,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target === this) this.classList.remove('activo');
   });
 });
+
+
+document.getElementById('top-ventas-badge').addEventListener('click', function() {
+    const seccion = document.getElementById('destacados');
+    if (seccion) {
+      const y = seccion.getBoundingClientRect().top + window.pageYOffset - 120; // Cambia 120 por el margen que quieras
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  });
