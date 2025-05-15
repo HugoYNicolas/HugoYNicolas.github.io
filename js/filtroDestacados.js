@@ -4,29 +4,29 @@ document.addEventListener('DOMContentLoaded', function() {
     {
       nombre: 'Nike Mercurial Speed 009', 
       img: "img/botasnike.jpg", 
-      marca: 'nike',
-      categoria: 'calzado', 
-      deporte: 'futbol',
+      marca: 'Nike',
+      categoria: 'Calzado', 
+      deporte: 'Fútbol',
       precio: 289.99, 
       descripcion: "Las Nike Mercurial Dream Speed 009 ofrecen velocidad, amortiguación Air Zoom y tracción dinámica para superar a la defensa con facilidad."
     },
     {
       nombre: 'Camiseta Nike Los Angeles Lakers Icon Edition Lebron James', 
       img: "img/lakersnike.jpg",
-      marca: 'nike',
-      categoria: 'equipos', 
-      deporte: 'baloncesto',
+      marca: 'Nike',
+      categoria: 'Equipos', 
+      deporte: 'Baloncesto',
       precio: 104.99,
       descripcion: "La camiseta Los Angeles Lakers Icon Edition LeBron James combina tradición y estilo profesional con tejido transpirable, ideal para apoyar a tu equipo y jugar con comodidad."
     },
     {
-      nombre: 'Balón adidas Real Madrid 2024-2025', 
-      img: "img/balonadidas.jpg",
-      marca: 'adidas',
-      categoria: 'accesorios', 
-      deporte: 'baloncesto',
-      precio: 39.99,
-      descripcion: "Mejora tu juego mientras representas al Real Madrid con este balón adidas 2024-2025, fabricado en caucho resistente y con un diseño que luce las 3 bandas y el escudo del equipo."
+      nombre: 'Camiseta Jordan Paris Saint-Germain x Jordan Tercera Equipación 2023-2024', 
+      img: "img/psgjordan.jpg",
+      marca: 'Jordan',
+      categoria: 'Equipos', 
+      deporte: 'Fútbol',
+      precio: 59.99,
+      descripcion: "La camiseta tercera equipación PSG 2023/24 fusiona el estilo urbano con el fútbol de élite, con el icónico Jordan Elephant Print y tecnología Nike Match para máximo rendimiento y frescura."
     },
   ];
 
