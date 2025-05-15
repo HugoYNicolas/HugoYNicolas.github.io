@@ -821,7 +821,7 @@ footer {
 }
 
 .carrito-contenido h2 {
-  color: #1abc9c;
+  color: var(--color-principal);
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
   font-weight: 700;
@@ -878,7 +878,7 @@ footer {
 }
 
 .btn-cantidad:hover {
-  background: #1abc9c;
+  background: var(--color-acento);
   color: white;
 }
 
@@ -891,7 +891,7 @@ footer {
 
 .precio-total {
   font-weight: 700;
-  color: #1abc9c;
+  color: var(--color-principal);
 }
 
 .btn-eliminar {
@@ -922,7 +922,7 @@ footer {
 .cart-total-line.total {
   font-weight: 700;
   font-size: 1.2rem;
-  color: #1abc9c;
+  color: var(--color-principal);
   border-top: 1px solid #eee;
   margin-top: 0.5rem;
   padding-top: 1rem;
@@ -951,7 +951,7 @@ footer {
 }
 
 #tramitar-pedido {
-  background: #1abc9c;
+  background: var(--color-principal);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -963,7 +963,7 @@ footer {
 }
 
 #tramitar-pedido:hover {
-  background: #16a085;
+  background: var(--color-acento);
   transform: translateY(-2px);
 }
 
@@ -985,7 +985,7 @@ footer {
 }
 
 .cerrar-carrito:hover {
-  color: #1abc9c;
+  color: var(--color-principal);
 }
 .carrito-producto {
   display: grid;
