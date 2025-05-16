@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
       img: "img/botasnike.jpg", 
       marca: 'Nike',
       categoria: 'Calzado', 
-      deporte: 'Fútbol',
+      deporte: 'Futbol',
       precio: 289.99, 
       descripcion: "Las Nike Mercurial Dream Speed 009 ofrecen velocidad, amortiguación Air Zoom y tracción dinámica para superar a la defensa con facilidad."
     },
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
       img: "img/viseranike.webp",
       marca: 'Nike',
       categoria: 'Accesorios', 
-      deporte: 'Ténis',
+      deporte: 'Tenis',
       precio: 29.99,
       descripcion: "Visera ligera y transpirable, perfecta para el tenis, con tejido que capilariza el sudor y diseño AeroBill acortado para máxima concentración en el juego."
     },
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
       img: "img/tenisadidas.jpg",
       marca: 'Adidas',
       categoria: 'Calzado', 
-      deporte: 'Ténis',
+      deporte: 'Tenis',
       precio: 99.99,
       descripcion: "Diseñadas para dominar la pista, estas zapatillas de tenis adidas ofrecen sujeción, tracción y comodidad para rendir al máximo en cada punto."
     },
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
       img: "img/bayernadidas.jpg",
       marca: 'Adidas',
       categoria: 'Equipos', 
-      deporte: 'Fútbol',
+      deporte: 'Futbol',
       precio: 119.99,
       descripcion: "La camiseta FC Bayern Authentic 2024-2025 combina tradición y rendimiento con un diseño en tonos rojos, detalles termotransferidos y tecnología HEAT.RDY para mantener la frescura en el campo."
     },
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img: "img/psgjordan.jpg",
         marca: 'Jordan',
         categoria: 'Equipos', 
-        deporte: 'Fútbol',
+        deporte: 'Futbol',
         precio: 59.99,
         descripcion: "La camiseta tercera equipación PSG 2023/24 fusiona el estilo urbano con el fútbol de élite, con el icónico Jordan Elephant Print y tecnología Nike Match para máximo rendimiento y frescura."
     },
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img: "img/pumaportugal.jpg",
         marca: 'Puma',
         categoria: 'Equipos', 
-        deporte: 'Fútbol',
+        deporte: 'Futbol',
         precio: 62.99,
         descripcion: "La segunda equipación de Portugal destaca con un diseño audaz y dinámico, fusionando arte, tecnología y fútbol en una camiseta ideal para el partido o el día a día."
     },
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img: "img/ropapuma.jpg",
         marca: 'Puma',
         categoria: 'Ropa', 
-        deporte: 'Fútbol',
+        deporte: 'Futbol',
         precio: 23.99,
         descripcion: "Estos pantalones de entrenamiento de fútbol para hombre están diseñados para ofrecer la máxima comodidad durante tus sesiones diarias, ya sea con calor o con frío."
     },
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img: "img/futbolunderarmour.jpg",
         marca: 'Underarmour',
         categoria: 'Calzado', 
-        deporte: 'Fútbol',
+        deporte: 'Futbol',
         precio: 69.99,
         descripcion: "Bota de fútbol Under Amour Magnético Select 4 FG. Botas de gama base elaboradas con piel sintética para campos de césped natural."
     },
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img: "img/camisetaasics.jpg",
         marca: 'Asics',
         categoria: 'Ropa', 
-        deporte: 'Ténis',
+        deporte: 'Tenis',
         precio: 89.99,
         descripcion: "La camiseta Asics Tennis Wear 24 ofrece ligereza y frescura con su diseño hueco y tejido de secado rápido, pensada para los entusiastas del tenis que buscan rendimiento y comodidad en la pista."
     },
@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img: "img/camiseta2asics.jpg",
         marca: 'Asics',
         categoria: 'Ropa', 
-        deporte: 'Ténis',
+        deporte: 'Tenis',
         precio: 109.99,
         descripcion: "La camiseta Asics Wear Australian Open 2024 combina tecnología de secado rápido con un diseño ligero y transpirable, ideal para ofrecer máximo rendimiento y comodidad en los partidos más exigentes del torneo."
     },
@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img: "img/pantalonasics.jpg",
         marca: 'Asics',
         categoria: 'Ropa', 
-        deporte: 'Ténis',
+        deporte: 'Tenis',
         precio: 84.99,
         descripcion: "La camiseta Asics Wear Australian Open 2024 combina tecnología de secado rápido con un diseño ligero y transpirable, ideal para ofrecer máximo rendimiento y comodidad en los partidos más exigentes del torneo."
     },
@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img: "img/muñequerasasics.jpg",
         marca: 'Asics',
         categoria: 'Accesorios', 
-        deporte: 'Ténis',
+        deporte: 'Tenis',
         precio: 8.99,
         descripcion: "Asics Pro son las muñequeras de tenis cortas que, gracias al tejido suave, absorben el sudor y garantizan una comodidad inigualable durante todo el partido."    
     },
@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img: "img/accesoriospuma.jpg",
         marca: 'Puma',
         categoria: 'Accesorios', 
-        deporte: 'Fútbol',
+        deporte: 'Futbol',
         precio: 20.99,
         descripcion: "Las espinilleras PUMA x Fútbol Emotion ULTRA Flex combinan diseño exclusivo y vibrante con ligereza, flexibilidad y resistencia para ofrecerte confianza y protección en cada partido."
     },
@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img: "img/botasadidas.jpg",
         marca: 'Adidas',
         categoria: 'Calzado', 
-        deporte: 'Fútbol',
+        deporte: 'Futbol',
         precio: 259.99,
         descripcion: "Las botas adidas F50 Elite edición limitada rinde homenaje a Mohamed Salah con diseño en rojo, empeine Fibertouch y suela Sprintframe 360 para velocidad y sujeción explosiva."
     },
@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img: "img/balonpuma.jpg",
         marca: 'Puma',
         categoria: 'Accesorios', 
-        deporte: 'Fútbol',
+        deporte: 'Futbol',
         precio: 99.99,
         descripcion: "PUMA y LaLiga presentan el balón 2024/25 con un diseño vibrante que fusiona colores corporativos, arte urbano y pop art, reflejando la pasión y esencia del fútbol en cada toque."
     },
@@ -289,7 +289,11 @@ document.addEventListener('DOMContentLoaded', function() {
   function mostrarProductos(productosFiltrados) {
     const contenedor = document.querySelector('.productos-grid');
     contenedor.innerHTML = '';
-    
+    // Actualiza el contador de productos filtrados
+    const contador = document.getElementById('contador-productos');
+    if (contador) {
+      contador.textContent = " " + productosFiltrados.length;
+    }
     if (productosFiltrados.length === 0) {
       contenedor.innerHTML = '<p>No se encontraron productos que coincidan con el filtro.</p>';
       return;
@@ -329,7 +333,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const coincideMarca = marca === '' || prod.marca.toLowerCase() === marca;
       return coincideBusqueda && coincideCategoria && coincideDeporte && coincideMarca;
     });
-
+    
     mostrarProductos(productosFiltrados);
   }
 
