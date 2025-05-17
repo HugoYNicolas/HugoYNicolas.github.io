@@ -103,6 +103,29 @@ nav ul li a {
   font-size: 1.1rem;
   transition: color 0.2s;
 }
+
+.iconos-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.usuario-icono img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-principal, #4cccf3);
+  background: #fff;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  box-shadow: 0 2px 8px rgba(76,204,243,0.08);
+}
+.usuario-icono:hover img,
+.usuario-icono:focus img {
+  border-color: var(--color-acento, #c300ff);
+  box-shadow: 0 4px 16px rgba(195,0,255,0.10);
+}
+
 nav ul li a:hover,
 nav ul li a.active { color: var(--color-principal); }
 .carrito-icono { position: relative; cursor: pointer; }
@@ -629,6 +652,123 @@ footer {
 }
 
 /* ==============================
+   HTML LOGIN
+============================== */
+.login-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+  display: flex;
+  overflow: hidden;
+  min-height: 480px;
+}
+.login-img {
+  flex: 1.2;
+  background: linear-gradient(120deg, var(--color-principal, #4cccf3), var(--color-acento, #c300ff));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 240px;
+}
+.login-img img {
+  width: 70%;
+  max-width: 220px;
+  border-radius: 50%;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+  background: #fff;
+  padding: 1.2rem;
+}
+.login-forms {
+  flex: 2;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.form-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.form-switcher button {
+  background: none;
+  border: none;
+  color: var(--color-principal, #4cccf3);
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+  padding: 0.3rem 1rem;
+}
+.form-switcher button.active {
+  border-color: var(--color-acento, #c300ff);
+  color: var(--color-acento, #c300ff);
+}
+.login-form {
+  display: none;
+  flex-direction: column;
+  gap: 1.1rem;
+  align-items: stretch;
+  max-width: 340px;
+  margin: 0 auto;
+}
+.login-form.active { display: flex; }
+.login-form h2 {
+  color: var(--color-principal, #4cccf3);
+  margin-bottom: 1.2rem;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+}
+.login-form input {
+  padding: 0.8rem 1rem;
+  border: 1.5px solid var(--color-gris, #ececec);
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #fafbfc;
+  transition: border 0.2s;
+}
+.login-form input:focus { border-color: var(--color-principal, #4cccf3);}
+.login-btn {
+  background: var(--color-principal, #4cccf3);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.9rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+.login-btn:hover { background: var(--color-acento, #c300ff);}
+.extra-links {
+  margin-top: 0.8rem;
+  text-align: center;
+  font-size: 0.97rem;
+}
+.extra-links a {
+  color: var(--color-acento, #c300ff);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.extra-links a:hover { color: var(--color-principal, #4cccf3);}
+@media (max-width: 800px) {
+  .login-container { flex-direction: column; min-height: 0; }
+  .login-img { min-height: 180px; justify-content: flex-start; }
+  .login-img img { width: 120px; }
+}
+@media (max-width: 500px) {
+  .login-forms { padding: 1.2rem 0.5rem; }
+}
+
+/* ==============================
    SCROLLBAR PERSONALIZADO
 ============================== */
 ::-webkit-scrollbar { width: 8px; background: var(--color-fondo); }
@@ -889,4 +1029,106 @@ footer {
 }
 .cerrar-carrito:hover {
   color: var(--color-principal);
+}
+
+/* ==============================
+   SECCIÓN DE INICIO DE SESIÓN
+============================== */
+.auth-buttons {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  margin: 2rem 0 1rem 0;
+}
+.btn-primario, .btn-secundario, .btn-invitado {
+  padding: 0.7rem 1.3rem;
+  border-radius: 12px;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-primario { background: var(--color-principal, #1abc9c); color: #fff; }
+.btn-primario:hover { background: var(--color-acento, #c300ff);}
+.btn-secundario { background: var(--color-gris, #ececec); color: var(--color-principal, #1abc9c);}
+.btn-secundario:hover { background: var(--color-principal, #1abc9c); color: #fff;}
+.btn-invitado { background: #f7f7f7; color: #444; border: 1.5px solid #e0e0e0;}
+.btn-invitado:hover { background: #e0e0e0; }
+
+.auth-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.35);
+  justify-content: center;
+  align-items: center;
+}
+.auth-modal.activo { display: flex; }
+.auth-modal-content {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 2.5rem 2rem 2rem 2rem;
+  min-width: 320px;
+  max-width: 95vw;
+  position: relative;
+}
+.cerrar-modal {
+  position: absolute; right: 18px; top: 16px;
+  font-size: 2rem; color: #888; cursor: pointer;
+  transition: color 0.2s;
+}
+.cerrar-modal:hover { color: var(--color-principal, #1abc9c); }
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.auth-form h2 {
+  color: var(--color-principal, #1abc9c);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+.auth-form input {
+  padding: 0.8rem 1rem;
+  border: 1.5px solid var(--color-gris, #ececec);
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #fafbfc;
+  transition: border 0.2s;
+}
+.auth-form input:focus { border-color: var(--color-principal, #1abc9c);}
+.login-btn {
+  background: var(--color-principal, #1abc9c);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.9rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+.login-btn:hover { background: var(--color-acento, #c300ff);}
+.extra-links {
+  margin-top: 0.8rem;
+  text-align: center;
+  font-size: 0.97rem;
+}
+.extra-links a {
+  color: var(--color-acento, #c300ff);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.extra-links a:hover {
+  color: var(--color-principal, #1abc9c);
+}
+@media (max-width: 500px) {
+  .auth-modal-content { padding: 1.2rem 0.5rem; min-width: 0; }
 }
