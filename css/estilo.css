@@ -471,6 +471,9 @@ h3 {
   color: #aaa;
   font-size: 1rem;
 }
+.oferta-color{
+  color: #ff0000;
+}
 .precio-oferta {
   color: red;
   font-weight: 700;
