@@ -4,13 +4,13 @@
    VARIABLES Y RESET
 ============================== */
 :root {
-  --color-principal: #4cccf3;
+  --color-principal: #838383;
   --color-secundario: #3b3b3b;
   --color-fondo: #f7f7f7;
   --color-blanco: #fff;
   --color-gris: #ececec;
   --color-texto: #222;
-  --color-acento: #c300ff;
+  --color-acento: #182ee4;
   --sombra: 0 4px 16px rgba(0,0,0,0.06);
   --radio: 12px;
 }
@@ -202,7 +202,7 @@ nav ul li a.active { color: var(--color-principal); }
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 .gradient-text {
-  background: linear-gradient(90deg, var(--color-acento), blue);
+  background: linear-gradient(90deg, var(--color-acento), rgb(0, 0, 0));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -258,14 +258,16 @@ nav ul li a.active { color: var(--color-principal); }
   justify-content: center;
   position: relative;
   z-index: 2;
-  min-width: 320px;
+  min-width: 0; /* Permite que el ancho sea flexible */
 }
 .hero-img img {
-  width: 320px;
-  height: 420px;
+  width: 100%;
+  max-width: 450px;      /* Limita el ancho máximo */
+  height: auto;          /* Mantiene la proporción real */
   object-fit: cover;
   border-radius: 2em 2em 1em 1em;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.18);
+  
+  display: block;
 }
 .hero-badge {
   position: absolute;
@@ -302,7 +304,7 @@ nav ul li a.active { color: var(--color-principal); }
   position: absolute;
   top: 18px;
   left: 18px;
-  background: #ff0062;
+  background: #ff0000;
   color: #fff;
   font-size: 0.95rem;
   font-weight: 700;
@@ -655,155 +657,6 @@ footer {
 }
 
 /* ==============================
-   CARRITO AT.CLIENTE Y FAQ/DEVOLUCIONES
-============================== */
-
-.atencion-section {
-  max-width: 950px;
-  margin: 3rem auto 2rem auto;
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 6px 32px rgba(0,0,0,0.10);
-  padding: 2.5rem 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5rem;
-  justify-content: space-between;
-}
-.atencion-info {
-  flex: 1 1 270px;
-  min-width: 240px;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  justify-content: flex-start;
-}
-.atencion-info h2 {
-  color: var(--color-principal, #1abc9c);
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  font-weight: 800;
-}
-.atencion-info ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  color: #444;
-  font-size: 1.05rem;
-}
-.atencion-info ul li {
-  margin-bottom: 0.7rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.atencion-info ul li strong {
-  color: var(--color-principal, #1abc9c);
-  min-width: 90px;
-  display: inline-block;
-}
-.atencion-info .enlaces-utiles {
-  margin-top: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-}
-.atencion-info .enlaces-utiles a {
-  color: var(--color-acento, #c300ff);
-  font-weight: 700;
-  text-decoration: none;
-  font-size: 1.08rem;
-  transition: color 0.2s;
-  display: inline-block;
-  margin-bottom: 0.3rem;
-}
-.atencion-info .enlaces-utiles a:hover {
-  color: var(--color-principal, #1abc9c);
-  text-decoration: underline;
-}
-.atencion-bloque {
-  flex: 2 1 400px;
-  min-width: 290px;
-  background: #fafbfc;
-  border-radius: 14px;
-  padding: 2rem 1.5rem;
-  box-shadow: 0 2px 12px rgba(26,188,156,0.04);
-  margin-bottom: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-.atencion-bloque h3 {
-  color: var(--color-principal, #1abc9c);
-  font-size: 1.3rem;
-  margin-bottom: 0.7rem;
-  font-weight: 700;
-}
-.atencion-bloque ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.atencion-bloque li {
-  margin-bottom: 1.1rem;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-  padding: 1rem 1.2rem;
-  transition: box-shadow 0.2s;
-}
-.atencion-bloque li:last-child { margin-bottom: 0; }
-.atencion-bloque li strong {
-  color: var(--color-acento, #c300ff);
-  font-size: 1.07rem;
-  font-weight: 700;
-  display: block;
-  margin-bottom: 0.3rem;
-}
-@media (max-width: 900px) {
-  .atencion-section {
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1.5rem 0.5rem;
-  }
-  .atencion-bloque, .atencion-info { padding: 1.2rem 0.7rem; }
-}
-
-.faq-list {
-  margin-top: 2rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.faq-item {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-  margin-bottom: 1.2rem;
-  padding: 1.2rem 1.5rem;
-}
-.faq-item h3 {
-  color: var(--color-principal);
-  margin-bottom: 0.5rem;
-}
-.devoluciones-info {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-  padding: 2rem;
-  max-width: 800px;
-  margin: 2rem auto;
-}
-.devoluciones-info h3 {
-  margin-top: 1.5rem;
-  color: var(--color-principal);
-}
-.devoluciones-info ul, .devoluciones-info ol {
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-/* ==============================
    HTML LOGIN
 ============================== */
 .login-container {
@@ -927,7 +780,7 @@ footer {
 ::-webkit-scrollbar-thumb { background: var(--color-principal); border-radius: 4px; }
 
 /* ==============================
-   CARRITO
+   CARRITO Y FAQ/DEVOLUCIONES
 ============================== */
 .carrito-modal {
   display: none;
@@ -967,7 +820,39 @@ footer {
   font-size: 1.2rem; cursor: pointer;
 }
 .carrito-total { margin-top: 1.5rem; font-size: 1.1rem; }
-
+.faq-list {
+  margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.faq-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  margin-bottom: 1.2rem;
+  padding: 1.2rem 1.5rem;
+}
+.faq-item h3 {
+  color: var(--color-principal);
+  margin-bottom: 0.5rem;
+}
+.devoluciones-info {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+.devoluciones-info h3 {
+  margin-top: 1.5rem;
+  color: var(--color-principal);
+}
+.devoluciones-info ul, .devoluciones-info ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
 /* --- Fondo y modal del carrito --- */
 .carrito-modal {
   display: none;
