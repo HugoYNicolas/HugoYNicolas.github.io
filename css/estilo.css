@@ -271,13 +271,13 @@ nav ul li a.active { color: var(--color-acento); }
 }
 .hero-badge {
   position: absolute;
-  left: 20px;
-  bottom: 30px;
+  top: 23rem; /* O el valor que desees */
+  left: 0.1rem;
   display: flex;
   align-items: center;
   gap: 0.5em;
-  background: #fff;
-  color: var(--color-principal);
+  background: var(--color-acento);
+  color: #fff;
   font-weight: 700;
   border-radius: 2em;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
@@ -287,6 +287,11 @@ nav ul li a.active { color: var(--color-acento); }
   opacity: 0.97;
   animation: badge-pop 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
+.hero-badge:hover{
+  background: #0099ff;
+  transform: scale(1.06) translateY(-2px);
+}
+
 .hero-badge img {
   width: 40px;
   height: 24px;
