@@ -127,7 +127,7 @@ nav ul li a {
 }
 
 nav ul li a:hover,
-nav ul li a.active { color: var(--color-principal); }
+nav ul li a.active { color: var(--color-acento); }
 .carrito-icono { position: relative; cursor: pointer; }
 .carrito-icono img { width: 32px; vertical-align: middle; }
 #carrito-contador {
@@ -152,7 +152,7 @@ nav ul li a.active { color: var(--color-principal); }
   justify-content: space-between;
   min-height: 520px;
   padding: 0 2rem;
-  background: linear-gradient(120deg, var(--color-principal) 60%, #fff 100%);
+  background: linear-gradient(120deg, rgb(99, 99, 240) 60%, #fff 100%);
   overflow: hidden;
   border-radius: var(--radio);
   box-shadow: 0 8px 32px rgba(0,0,0,0.10);
@@ -476,6 +476,17 @@ h3 {
 .oferta-color{
   color: #ff0000;
 }
+
+a[href="ofertas.html"]:hover .oferta-color,
+a[href="ofertas.html"]:focus .oferta-color {
+  background: #ff0000;   
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.1em 0.2em;
+  transition: background 0.5s, color 0.5s;
+}
+
+
 .precio-oferta {
   color: red;
   font-weight: 700;
