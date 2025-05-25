@@ -938,6 +938,23 @@ AT.CLIENTE Y FAQ/DEVOLUCIONES
   .login-forms { padding: 1.2rem 0.5rem; }
 }
 
+.login-error {
+  background: #ffeaea;
+  color: #c30000;
+  border: 1px solid #ffbbbb;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  animation: fadeInError 0.3s;
+  box-shadow: 0 2px 12px rgba(195,0,0,0.05);
+}
+
+@keyframes fadeInError {
+  from { opacity: 0; transform: translateY(-10px);}
+  to { opacity: 1; transform: translateY(0);}
+}
 /* ==============================
    SCROLLBAR PERSONALIZADO
 ============================== */
