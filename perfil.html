@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Acceso | DigiDeporte</title>
+  <title>Mi Perfil | DigiDeporte</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/estilo.css">
   <link rel="stylesheet" href="css/login.css">
@@ -34,7 +34,7 @@
         <img src="img/user.png" alt="Usuario" />
       </a>
     </div>
-    <!-- Modal Carrito (igual que antes) -->
+    <!-- Modal Carrito -->
     <div id="carrito-modal" class="carrito-modal">
       <div class="carrito-contenido">
         <span class="cerrar-carrito">&times;</span>
@@ -62,47 +62,42 @@
     </div>
   </header>
   <main>
-    <div class="login-container">
-      <div class="login-img">
-        <img src="img/user.png" alt="Avatar usuario">
+    <section class="perfil-section">
+      <div class="perfil-header">
+        <img src="img/user.png" alt="Avatar" class="perfil-avatar">
+        <h1>Mi Perfil</h1>
       </div>
-      <div class="login-forms">
-        <div class="form-switcher">
-          <button id="btn-login" class="active" onclick="switchForm('login')">Iniciar sesión</button>
-          <button id="btn-registro" onclick="switchForm('registro')">Registrarse</button>
+      <div class="perfil-info">
+        <div class="perfil-info-item">
+          <span>Nombre:</span>
+          <strong id="perfil-nombre"></strong>
         </div>
-        <form id="form-login" class="login-form active">
-          <h2>Iniciar sesión</h2>
-          <input type="email" id="login-email" placeholder="Email" required>
-          <input type="password" id="login-password" placeholder="Contraseña" required>
-          <button type="submit" class="login-btn">Entrar</button>
-          <div id="login-error" class="login-error" style="display:none"></div>
-          <div class="extra-links">
-            ¿No tienes cuenta? <a href="#" onclick="switchForm('registro'); return false;">Regístrate</a>
-          </div>
-        </form>
-        <form id="form-registro" class="login-form">
-          <h2>Registro</h2>
-          <input type="text" id="registro-nombre" placeholder="Nombre" required>
-          <input type="email" id="registro-email" placeholder="Email" required>
-          <input type="password" id="registro-password" placeholder="Contraseña" required>
-          <button type="submit" class="login-btn">Registrarse</button>
-          <div id="registro-error" class="login-error" style="display:none"></div>
-          <div class="extra-links">
-            ¿Ya tienes cuenta? <a href="#" onclick="switchForm('login'); return false;">Inicia sesión</a>
-          </div>
-        </form>
-        </form>
+        <div class="perfil-info-item">
+          <span>Email:</span>
+          <strong id="perfil-email"></strong>
+        </div>
+        <div class="perfil-info-item">
+          <span>Miembro desde:</span>
+          <strong id="perfil-fecha"></strong>
+        </div>
       </div>
-    </div>
+      <form id="form-editar-perfil">
+        <label for="nuevo-nombre">Nuevo nombre</label>
+        <input type="text" id="nuevo-nombre" placeholder="Nuevo nombre">
+        <label for="nuevo-email">Nuevo email</label>
+        <input type="email" id="nuevo-email" placeholder="Nuevo email">
+        <label for="nueva-password">Nueva contraseña</label>
+        <input type="password" id="nueva-password" placeholder="Nueva contraseña">
+        <button type="submit" class="btn-guardar">Guardar cambios</button>
+        <div id="perfil-error" class="login-error" style="display:none"></div>
+      </form>
+      <button id="btn-cerrar-sesion" class="btn-cerrar-sesion">Cerrar sesión</button>
+    </section>
   </main>
-  <!-- Firebase SDKs -->
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
-
   <script src="js/firebase-init.js"></script>
-  <script src="js/login.js"></script>
+  <script src="js/perfil.js"></script>
   <script src="js/tienda.js"></script>
-  
 </body>
 </html>
