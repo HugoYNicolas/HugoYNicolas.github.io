@@ -77,7 +77,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // 5. Observador de estado de sesión (onAuthStateChanged)
-  document.addEventListener('DOMContentLoaded', function() {
     const paginasPublicas = [
       '/index.html',
       '/productos.html',
@@ -111,7 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       }
     });
-  });
   // 6. Función para traducir errores de Firebase
   function traducirError(error) {
     switch (error.code) {
