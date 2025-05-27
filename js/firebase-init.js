@@ -77,17 +77,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // 5. Observador de estado de sesión (onAuthStateChanged)
-    const paginasPublicas = [
-      '/index.html',
-      '/productos.html',
-      '/marcas.html',
-      '/ofertas.html',
-      '/tiendas.html',
-      '/atencionalcliente.html',
-      '/contacto.html',
-      '/', // para el index en raíz
-    ];
-
     auth.onAuthStateChanged(function(user) {
       const userLink = document.querySelector('.usuario-icono');
       const path = window.location.pathname;
@@ -104,9 +93,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (userLink) {
           userLink.setAttribute('href', 'login.html');
           userLink.setAttribute('title', 'Accede o regístrate');
-        }
-        if (!paginasPublicas.includes(path) && !path.endsWith('login.html')) {
-          window.location.href = "login.html";
         }
       }
     });
