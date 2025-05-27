@@ -400,12 +400,12 @@ nav ul li a.active { color: var(--color-acento); }
   justify-content: center;
   position: relative;
   z-index: 2;
-  min-width: 0; /* Permite que el ancho sea flexible */
+  min-width: 0; 
 }
 .hero-img img {
   width: 100%;
-  max-width: 450px;      /* Limita el ancho máximo */
-  height: auto;          /* Mantiene la proporción real */
+  max-width: 450px;      
+  height: auto;    
   object-fit: cover;
   border-radius: 2em 2em 1em 1em;
   
@@ -413,7 +413,7 @@ nav ul li a.active { color: var(--color-acento); }
 }
 .hero-badge {
   position: absolute;
-  top: 23rem; /* O el valor que desees */
+  top: 23rem; 
   left: 0.1rem;
   display: flex;
   align-items: center;
@@ -1194,7 +1194,6 @@ AT.CLIENTE Y FAQ/DEVOLUCIONES
 }
 .carrito-total { margin-top: 1.5rem; font-size: 1.1rem; }
 
-/* --- Fondo y modal del carrito --- */
 .carrito-modal {
   display: none;
   position: fixed;
@@ -1207,7 +1206,6 @@ AT.CLIENTE Y FAQ/DEVOLUCIONES
 }
 .carrito-modal.activo { display: flex; }
 
-/* --- Contenido principal del carrito --- */
 .carrito-contenido {
   background: #fff;
   border-radius: 16px;
@@ -1226,7 +1224,6 @@ AT.CLIENTE Y FAQ/DEVOLUCIONES
   font-weight: 700;
 }
 
-/* --- Producto en el carrito --- */
 .carrito-producto {
   display: grid;
   grid-template-columns: 60px 2fr 1fr 1fr 30px;
@@ -1256,7 +1253,6 @@ AT.CLIENTE Y FAQ/DEVOLUCIONES
   color: var(--color-principal);
 }
 
-/* --- Control de cantidad --- */
 .control-cantidad {
   display: flex;
   align-items: center;
@@ -1288,7 +1284,6 @@ AT.CLIENTE Y FAQ/DEVOLUCIONES
   display: inline-block;
 }
 
-/* --- Botón eliminar producto --- */
 .btn-eliminar {
   background: none;
   border: none;
@@ -1301,7 +1296,6 @@ AT.CLIENTE Y FAQ/DEVOLUCIONES
   color: #ff0000;
 }
 
-/* --- Totales y acciones --- */
 .cart-totals {
   margin-top: 1.5rem;
   padding-top: 1rem;
@@ -1355,7 +1349,6 @@ AT.CLIENTE Y FAQ/DEVOLUCIONES
   transform: translateY(-2px);
 }
 
-/* --- Carrito vacío --- */
 .carrito-vacio {
   text-align: center;
   padding: 2rem 0;
@@ -1363,7 +1356,6 @@ AT.CLIENTE Y FAQ/DEVOLUCIONES
   font-style: italic;
 }
 
-/* --- Botón cerrar --- */
 .cerrar-carrito {
   position: absolute;
   right: 20px;
