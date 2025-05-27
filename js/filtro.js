@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
         descripcion: "La camiseta Puma Graphics Running Faster combina comodidad y rendimiento, con un diseño dinámico y tejido transpirable para mantenerte fresco durante el entrenamiento."
     },
     {
-      nombre: 'Gorra Under Armour UA Blitzing', 
+      nombre: 'Gorra armour Armour UA Blitzing', 
         img: "img/gorrounderarmour.jpg",
         marca: 'Underarmour',
         categoria: 'Accesorios', 
@@ -396,60 +396,132 @@ document.addEventListener('DOMContentLoaded', function() {
         deporte: 'Running',
         precio: 55.99,
         descripcion: "Pantalón largo Jordan Paris Saint-Germain Training 2023-2024, diseñado para comodidad y estilo durante el entrenamiento."
-    },/*
-    {
-      nombre: '', 
-        img: "img/runningadidas.jpg",
-        marca: 'Adidas',
-        categoria: 'Ropa', 
-        deporte: 'Running',
-        precio: .99,
-        descripcion: ""
     },
     {
-      nombre: '', 
-        img: "img/runningadidas.jpg",
-        marca: 'Adidas',
+      nombre: 'Pantalón largo Jordan Paris Saint-Germain x Jordan Training 2023-2024', 
+        img: "img/pantalon2jordan.jpg",
+        marca: 'Jordan',
         categoria: 'Ropa', 
         deporte: 'Running',
-        precio: .99,
-        descripcion: ""
+        precio: 55.99,
+        descripcion: "Pantalón largo Jordan Paris Saint-Germain Training 2023-2024, diseñado para comodidad y estilo durante el entrenamiento."
     },
     {
-      nombre: '', 
-        img: "img/runningadidas.jpg",
-        marca: 'Adidas',
-        categoria: 'Ropa', 
-        deporte: 'Running',
-        precio: .99,
-        descripcion: ""
+      nombre: 'Zapatos de fútbol Puma Future Match FG/AG', 
+        img: "img/botaspuma.jpg",
+        marca: 'Puma',
+        categoria: 'Calzado', 
+        deporte: 'Fútbol',
+        precio: 155.99,
+        descripcion: "Bota de fútbol Puma Future Match FG/AG para adultos. Botas sintéticas para utilizar en campos de hierba artificial y hierba natural. Botas de gama media en color Black-Silver."
     },
     {
-      nombre: '', 
-        img: "img/runningadidas.jpg",
-        marca: 'Adidas',
-        categoria: 'Ropa', 
-        deporte: 'Running',
-        precio: .99,
-        descripcion: ""
+      nombre: 'Puma Borussia Dortmund Third Kit 2024-2025 Jersey', 
+        img: "img/dortmund.jpg",
+        marca: 'Puma',
+        categoria: 'Equipos', 
+        deporte: 'Fútbol',
+        precio: 94.99,
+        descripcion: "Una camiseta con mucha historia. La tercera equipación BVB 24/25 combina elementos de los momentos más históricos del equipo, diseñada para los aficionados más apasionados."
     },
     {
-      nombre: '', 
-        img: "img/runningadidas.jpg",
-        marca: 'Adidas',
+      nombre: 'Sudadera Puma Individualliga 1/4 Zip Top Jr', 
+        img: "img/sudadera2puma.jpg",
+        marca: 'Puma',
         categoria: 'Ropa', 
         deporte: 'Running',
-        precio: .99,
-        descripcion: ""
+        precio: 39.99,
+        descripcion: "Sudadera Individualliga 1/4 Zip Top Jr, ideal para entrenar al máximo en frío gracias a su diseño llamativo y ajuste perfecto para tus sesiones diarias."
     },
     {
-      nombre: '', 
-        img: "img/runningadidas.jpg",
-        marca: 'Adidas',
+      nombre: 'Las Court Pro son zapatillas ideales para jóvenes jugadores, con malla transpirable para comodidad y cuello de tobillo que ofrece protección y estabilidad en la pista.', 
+        img: "img/calzado2puma.jpg",
+        marca: 'Puma',
+        categoria: 'Calzado', 
+        deporte: 'Running',
+        precio: 89.99,
+        descripcion: "Las Court Pro son zapatillas ideales para jóvenes jugadores, con malla transpirable para comodidad y cuello de tobillo que ofrece protección y estabilidad en la pista."
+    },
+    {
+      nombre: 'Camiseta Under Armour HeatGear Compression LS', 
+        img: "img/camisetaunderarmour.jpg",
+        marca: 'Underarmour',
         categoria: 'Ropa', 
         deporte: 'Running',
-        precio: .99,
-        descripcion: ""
+        precio: 34.99,
+        descripcion: "Camiseta de manga larga HG Comp SS de la marca Under Armour en color White-Black."
+    },
+    {
+      nombre: 'Sudadera Under Armour Rival', 
+        img: "img/sudadera2underarmour.jpg",
+        marca: 'Underarmour',
+        categoria: 'Ropa', 
+        deporte: 'Running',
+        precio: 59.99,
+        descripcion: "Sudadera Under Amour Rival. Confeccionada con material que proporciona rendimiento, reemplaza las viejas sudaderas de algodón. Sorprendentemente ligero, pero a la vez te mantiene en calor."
+    },
+    {
+      nombre: 'Zapatillas Under Armour Curry 12 Dark Energy', 
+        img: "img/calzado2underarmour.jpg",
+        marca: 'Underarmour',
+        categoria: 'Calzado', 
+        deporte: 'Running',
+        precio: 59.99,
+        descripcion: "Sudadera Under Amour Rival. Confeccionada con material que proporciona rendimiento, reemplaza las viejas sudaderas de algodón. Sorprendentemente ligero, pero a la vez te mantiene en calor."
+    },
+    {
+      nombre: 'Mochila Under Armour UA Hustle Lite Backpack (26,5 L)', 
+        img: "img/mochilaunderarmour.jpg",
+        marca: 'Underarmour',
+        categoria: 'Accesorio', 
+        deporte: 'Running',
+        precio: 34.99,
+        descripcion: "Esta mochila Under Armour Hustle Lite de 26,5L cuenta con tecnología Storm que proporciona protección resistente al agua y a las manchas."
+    },
+    {
+      nombre: 'Zapatilla ASICS Gel-1130', 
+        img: "img/calzadoasics.jpg",
+        marca: 'Asics',
+        categoria: 'Calzado', 
+        deporte: 'Running',
+        precio: 34.99,
+        descripcion: "Zapatillas ASICS Gel-1130 con diseño noventero y tecnología GEL, combinan soporte y estilo retro ideal para el uso urbano diario."
+    },
+    {
+      nombre: 'Zapatilla ASICS Gel-1130 beige', 
+        img: "img/calzado2asics.jpg",
+        marca: 'Asics',
+        categoria: 'Calzado', 
+        deporte: 'Running',
+        precio: 34.99,
+        descripcion: "Las zapatillas GEL-NYC combinan estilo retro y moderno, inspiradas en modelos como las GEL-NIMBUS 3 y GEL-CUMULUS 16. Su diseño ofrece gran confort gracias a la tecnología GEL y espumas ligeras."
+    },
+    {
+      nombre: 'Camiseta Asics Seamless SS Top', 
+        img: "img/camiseta3asics.jpg",
+        marca: 'Asics',
+        categoria: 'Ropa', 
+        deporte: 'Tenis',
+        precio: 49.99,
+        descripcion: "Camiseta Asics Seamless SS Top para tenis, diseñada sin costuras para mayor comodidad y libertad de movimiento en la pista. Ideal para entrenamientos intensos."
+    },
+    {
+      nombre: 'Asics Gel-Resolution X Zapatilla', 
+        img: "img/calzado3asics.jpg",
+        marca: 'Asics',
+        categoria: 'Calzado', 
+        deporte: 'Tenis',
+        precio: 119.99,
+        descripcion: "Zapatilla Asics Gel-Resolution X, diseñada para tenis con gran estabilidad, sujeción y tecnología GEL que mejora la amortiguación en cada paso."
+    },
+    {
+      nombre: 'Visera Asics performance visor', 
+        img: "img/viseraasics.jpg",
+        marca: 'Asics',
+        categoria: 'Accesorios', 
+        deporte: 'Tenis',
+        precio: 29.99,
+        descripcion: "Zapatilla Asics Gel-Resolution X, diseñada para tenis con gran estabilidad, sujeción y tecnología GEL que mejora la amortiguación en cada paso."
     },
     /*
     {
@@ -462,7 +534,6 @@ document.addEventListener('DOMContentLoaded', function() {
         descripcion: ""
     },
     */
-    // Añade más productos aquí...
   ];
 
   // Función para mostrar productos en el DOM
@@ -539,6 +610,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Mostrar todos los productos al cargar inicialmente
   mostrarProductos(productos);
 });
