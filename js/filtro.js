@@ -271,6 +271,186 @@ document.addEventListener('DOMContentLoaded', function() {
         precio: 69.99,
         descripcion: "El balón Jordan Basketball 8P Energy destaca por su diseño en Hyper Pink y detalles en negro y blanco, ofreciendo agarre, durabilidad y estilo para dominar la cancha con energía y precisión."
     },
+    {
+      nombre: 'Camiseta Nike Sportswear Just Do It Swoosh', 
+        img: "img/camiseta2nike.jpg",
+        marca: 'Nike',
+        categoria: 'Ropa', 
+        deporte: 'Running',
+        precio: 24.99,
+        descripcion: "La camiseta Nike Sportswear está confeccionada con algodón para proporcionar comodidad durante todo el día."
+    },
+    {
+      nombre: 'Zapatilla Nike Air Force 1 07', 
+        img: "img/airforce.jpg",
+        marca: 'Nike',
+        categoria: 'Calzado', 
+        deporte: 'Running',
+        precio: 119.99,
+        descripcion: "La Nike Air Force 1 de cuero moderniza un clásico con una unidad Air-Sole y entresuela de espuma para mayor confort y estilo urbano."
+    },
+    {
+      nombre: 'Gorra Nike Club Metal Swoosh', 
+        img: "img/gorranike.jpg",
+        marca: 'Nike',
+        categoria: 'Accesorios', 
+        deporte: 'Running',
+        precio: 24.99,
+        descripcion: "Estilo deportivo con el icónico Swoosh. Esta gorra Nike combina comodidad, frescura y un look impecable gracias a su diseño sin estructura y el logotipo metálico."
+    },
+    {
+      nombre: 'Camiseta Nike Chelsea FC Primera Equipación Authentic 2024-2025', 
+        img: "img/chelsea.jpg",
+        marca: 'Nike',
+        categoria: 'Equipos', 
+        deporte: 'Fútbol',
+        precio: 149.99,
+        descripcion: "Inspirada en los profesionales, la camiseta del Chelsea 2024/25 combina tecnología Dri-FIT ADV y diseño auténtico para máxima comodidad y orgullo blue."
+    },
+    {
+      nombre: 'Camiseta Nike Inter Milan Primera Equipación Authentic 2024-2025', 
+        img: "img/interdemilan.jpg",
+        marca: 'Nike',
+        categoria: 'Equipos', 
+        deporte: 'Fútbol',
+        precio: 149.99,
+        descripcion: "La camiseta del Inter 2024/25 ofrece el mismo diseño que usan los profesionales, con tecnología Dri-FIT ADV para máxima frescura, comodidad y orgullo nerazzurro."
+    },
+    {
+      nombre: 'Chanclas adidas Adilette', 
+        img: "img/chanclasadidas.jpg",
+        marca: 'Adidas',
+        categoria: 'Accesorios', 
+        deporte: 'Running',
+        precio: 44.99,
+        descripcion: "Icónicas desde 1972, las chanclas Adilette combinan estilo atemporal, comodidad total y un diseño ligero perfecto para el día a día o la piscina."
+    },
+    {
+      nombre: 'Guardaespinilleras adidas Ankle Strap', 
+        img: "img/guardaespinilleras.jpg",
+        marca: 'Adidas',
+        categoria: 'Accesorios', 
+        deporte: 'Running',
+        precio: 9.99,
+        descripcion: "Cinta de cinta autoadherente. Incluye un par de cintas, una cinta para cada pierna ideal para prevenir deslizamientos de la espinillera, llevarla debajo o en la base de la espinillera. Cinta que sustituye al esparadrapo."
+    },
+    {
+      nombre: 'Zapatillas adidas Bounce Legends', 
+        img: "img/calzadoadidas.jpg",
+        marca: 'Adidas',
+        categoria: 'Calzado', 
+        deporte: 'Baloncesto',
+        precio: 69.99,
+        descripcion: "Zapatilla de baloncesto Adidas Bounce Legends con mediasuela Bounce que ofrece amortiguación y impulso para movimientos rápidos. Diseño compacto con las 3 bandas clásicas para potenciar tu juego."
+    },
+    {
+      nombre: 'Sudadera adidas Essentials Big Logo', 
+        img: "img/sudaderaadidas.jpg",
+        marca: 'Adidas',
+        categoria: 'Ropa', 
+        deporte: 'Running',
+        precio: 54.99,
+        descripcion: "Sudadera adidas de felpa supersuave ideal para entrenar o relajarte, con puños y dobladillo de canalé que ofrecen comodidad y mantienen la temperatura."
+    },
+    {
+      nombre: 'Sudadera adidas Essentials Big Logo', 
+        img: "img/realmadrid.jpg",
+        marca: 'Adidas',
+        categoria: 'Equipo', 
+        deporte: 'Fútbol',
+        precio: 74.99,
+        descripcion: "Camiseta adidas Real Madrid blanca con detalles dorados y ¡Hala Madrid! en la nuca. Tejido AEROREADY que mantiene la piel seca y cómoda."
+    },
+    {
+      nombre: 'Camiseta Jordan Jumpman', 
+        img: "img/camisetajordan.jpg",
+        marca: 'Jordan',
+        categoria: 'Ropa', 
+        deporte: 'Running',
+        precio: 29.99,
+        descripcion: "tá confeccionada con un tejido suave y cómodo, y un ajuste holgado y desenfadado."
+    },
+    {
+      nombre: 'Zapatilla Jordan Air Jordan 1 Retro High OG Midnight Navy', 
+        img: "img/calzado3jordan.jpg",
+        marca: 'Jordan',
+        categoria: 'Calzado', 
+        deporte: 'Baloncesto',
+        precio: 114.99,
+        descripcion: "Las Air Jordan 1 Retro High reinventan un clásico con materiales premium, nuevos colores y texturas, combinando modernidad y estilo atemporal."
+    },
+    {
+      nombre: 'Riñonera Jordan Monogram Camera Bag', 
+        img: "img/riñonerajordan.jpg",
+        marca: 'Jordan',
+        categoria: 'Accesorios', 
+        deporte: 'Running',
+        precio: 32.99,
+        descripcion: "Riñonera Jordan con estampado de monograma Woven, compartimentos con cierre para objetos pequeños y correa regulable y extraíble para mayor versatilidad."
+    },
+    {
+      nombre: 'Pantalón largo Jordan Paris Saint-Germain x Jordan Training 2023-2024', 
+        img: "img/pantalon2jordan.jpg",
+        marca: 'Jordan',
+        categoria: 'Ropa', 
+        deporte: 'Running',
+        precio: 55.99,
+        descripcion: "Pantalón largo Jordan Paris Saint-Germain Training 2023-2024, diseñado para comodidad y estilo durante el entrenamiento."
+    },/*
+    {
+      nombre: '', 
+        img: "img/runningadidas.jpg",
+        marca: 'Adidas',
+        categoria: 'Ropa', 
+        deporte: 'Running',
+        precio: .99,
+        descripcion: ""
+    },
+    {
+      nombre: '', 
+        img: "img/runningadidas.jpg",
+        marca: 'Adidas',
+        categoria: 'Ropa', 
+        deporte: 'Running',
+        precio: .99,
+        descripcion: ""
+    },
+    {
+      nombre: '', 
+        img: "img/runningadidas.jpg",
+        marca: 'Adidas',
+        categoria: 'Ropa', 
+        deporte: 'Running',
+        precio: .99,
+        descripcion: ""
+    },
+    {
+      nombre: '', 
+        img: "img/runningadidas.jpg",
+        marca: 'Adidas',
+        categoria: 'Ropa', 
+        deporte: 'Running',
+        precio: .99,
+        descripcion: ""
+    },
+    {
+      nombre: '', 
+        img: "img/runningadidas.jpg",
+        marca: 'Adidas',
+        categoria: 'Ropa', 
+        deporte: 'Running',
+        precio: .99,
+        descripcion: ""
+    },
+    {
+      nombre: '', 
+        img: "img/runningadidas.jpg",
+        marca: 'Adidas',
+        categoria: 'Ropa', 
+        deporte: 'Running',
+        precio: .99,
+        descripcion: ""
+    },
     /*
     {
       nombre: '', 
