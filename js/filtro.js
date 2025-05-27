@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img: "img/chelsea.jpg",
         marca: 'Nike',
         categoria: 'Equipos', 
-        deporte: 'Fútbol',
+        deporte: 'Futbol',
         precio: 149.99,
         descripcion: "Inspirada en los profesionales, la camiseta del Chelsea 2024/25 combina tecnología Dri-FIT ADV y diseño auténtico para máxima comodidad y orgullo blue."
     },
@@ -312,7 +312,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img: "img/interdemilan.jpg",
         marca: 'Nike',
         categoria: 'Equipos', 
-        deporte: 'Fútbol',
+        deporte: 'Futbol',
         precio: 149.99,
         descripcion: "La camiseta del Inter 2024/25 ofrece el mismo diseño que usan los profesionales, con tecnología Dri-FIT ADV para máxima frescura, comodidad y orgullo nerazzurro."
     },
@@ -357,7 +357,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img: "img/realmadrid.jpg",
         marca: 'Adidas',
         categoria: 'Equipo', 
-        deporte: 'Fútbol',
+        deporte: 'Futbol',
         precio: 74.99,
         descripcion: "Camiseta adidas Real Madrid blanca con detalles dorados y ¡Hala Madrid! en la nuca. Tejido AEROREADY que mantiene la piel seca y cómoda."
     },
@@ -411,7 +411,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img: "img/botaspuma.jpg",
         marca: 'Puma',
         categoria: 'Calzado', 
-        deporte: 'Fútbol',
+        deporte: 'Futbol',
         precio: 155.99,
         descripcion: "Bota de fútbol Puma Future Match FG/AG para adultos. Botas sintéticas para utilizar en campos de hierba artificial y hierba natural. Botas de gama media en color Black-Silver."
     },
@@ -420,7 +420,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img: "img/dortmund.jpg",
         marca: 'Puma',
         categoria: 'Equipos', 
-        deporte: 'Fútbol',
+        deporte: 'Futbol',
         precio: 94.99,
         descripcion: "Una camiseta con mucha historia. La tercera equipación BVB 24/25 combina elementos de los momentos más históricos del equipo, diseñada para los aficionados más apasionados."
     },
