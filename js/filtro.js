@@ -398,15 +398,6 @@ document.addEventListener('DOMContentLoaded', function() {
         descripcion: "Pantalón largo Jordan Paris Saint-Germain Training 2023-2024, diseñado para comodidad y estilo durante el entrenamiento."
     },
     {
-      nombre: 'Pantalón largo Jordan Paris Saint-Germain x Jordan Training 2023-2024', 
-        img: "img/pantalon2jordan.jpg",
-        marca: 'Jordan',
-        categoria: 'Ropa', 
-        deporte: 'Running',
-        precio: 55.99,
-        descripcion: "Pantalón largo Jordan Paris Saint-Germain Training 2023-2024, diseñado para comodidad y estilo durante el entrenamiento."
-    },
-    {
       nombre: 'Zapatos de fútbol Puma Future Match FG/AG', 
         img: "img/botaspuma.jpg",
         marca: 'Puma',
