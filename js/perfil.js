@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
       const user = auth.currentUser;
       const nuevoNombre = document.getElementById('nuevo-nombre').value.trim();
-      const nuevoEmail = document.getElementById('nuevo-email').value.trim();
       const nuevaPassword = document.getElementById('nueva-password').value.trim();
       const errorDiv = document.getElementById('perfil-error');
       errorDiv.style.display = 'none';
