@@ -56,9 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (nuevoNombre && nuevoNombre !== user.displayName) {
           await user.updateProfile({ displayName: nuevoNombre });
         }
-        if (nuevoEmail && nuevoEmail !== user.email) {
-          await user.updateEmail(nuevoEmail);
-        }
         if (nuevaPassword) {
           await user.updatePassword(nuevaPassword);
         }
