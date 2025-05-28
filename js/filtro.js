@@ -425,7 +425,7 @@ document.addEventListener('DOMContentLoaded', function() {
         descripcion: "Sudadera Individualliga 1/4 Zip Top Jr, ideal para entrenar al máximo en frío gracias a su diseño llamativo y ajuste perfecto para tus sesiones diarias."
     },
     {
-      nombre: 'Las Court Pro son zapatillas ideales para jóvenes jugadores, con malla transpirable para comodidad y cuello de tobillo que ofrece protección y estabilidad en la pista.', 
+      nombre: 'Zapatillas Puma Court Pro', 
         img: "img/calzado2puma.jpg",
         marca: 'Puma',
         categoria: 'Calzado', 
